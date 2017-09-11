@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Emoji
+
+  Created by Julien on 21/08/2017.
+  Copyright © 2017 Sinplicity. All rights reserved.
+*/
+
+"category.0" = "Smileys & People";
+"category.1" = "Animals & Nature";
+"category.2" = "Food & Drink";
+"category.3" = "Activity";
+"category.4" = "Travel & Places";
+"category.5" = "Objects";
+"category.6" = "Symbols";
+"category.7" = "Flags";
+
+"detail.nothingselected" = "No emoji selected";
+"detail.selectanemoji" = "Please, select an emoji in the side panel";
+"master.title" = "All emojis";
+"detail.title" = "My emoji";

@@ -1,0 +1,35 @@
+# Created by https://www.gitignore.io
+.DS_Store
+*.dSYM.zip
+
+### Xcode ###
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+Pods/Pods.xcodeproj/xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData
+*.xcuserstate
+*.hmap
+*.ipa
+*.cer
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
