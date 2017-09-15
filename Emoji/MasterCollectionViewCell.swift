@@ -21,7 +21,7 @@ class MasterCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectedBackgroundView = UIView()
-        self.selectedBackgroundView?.backgroundColor = UIColor(colorLiteralRed: 0.666, green: 0.666, blue: 0.666, alpha: 1)
+        self.selectedBackgroundView?.backgroundColor = UIColor(red: 0.666, green: 0.666, blue: 0.666, alpha: 1)
         self.shortCodeLabel.highlightedTextColor = .black
     }
 }

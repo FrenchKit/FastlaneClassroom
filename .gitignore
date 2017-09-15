@@ -27,9 +27,5 @@ fastlane/report.xml
 # deliver temporary files
 Preview.html
 
-# snapshot generated screenshots
-fastlane/screenshots/**/*.png
-fastlane/screenshots/screenshots.html
-
 # scan temporary files
 fastlane/test_output

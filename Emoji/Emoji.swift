@@ -8,42 +8,6 @@
 
 import Foundation
 
-enum EmojiGroup: Int {
-    case people = 0
-    case nature = 1
-    case food_drink = 2
-    case travel_places = 3
-    case activities = 4
-    case objects = 5
-    case symbols = 6
-    case flags = 7
-
-    func displayLabel() -> String {
-        return self.localizableKey().localized
-    }
-
-    private func localizableKey() -> String {
-        switch self {
-        case .people:
-            return "category.0"
-        case .nature:
-            return "category.1"
-        case .food_drink:
-            return "category.2"
-        case .travel_places:
-            return "category.3"
-        case .activities:
-            return "category.4"
-        case .objects:
-            return "category.5"
-        case .symbols:
-            return "category.6"
-        case .flags:
-            return "category.7"
-        }
-    }
-}
-
 class Emoji {
     let value: String
     let description: String
@@ -78,5 +42,41 @@ class Emoji {
             }
         }
         self.shortcodes = shortcodes
+    }
+}
+
+enum EmojiGroup: Int {
+    case people = 0
+    case nature = 1
+    case food_drink = 2
+    case travel_places = 3
+    case activities = 4
+    case objects = 5
+    case symbols = 6
+    case flags = 7
+    
+    func displayLabel() -> String {
+        return self.localizableKey().localized
+    }
+    
+    private func localizableKey() -> String {
+        switch self {
+        case .people:
+            return "category.0"
+        case .nature:
+            return "category.1"
+        case .food_drink:
+            return "category.2"
+        case .travel_places:
+            return "category.3"
+        case .activities:
+            return "category.4"
+        case .objects:
+            return "category.5"
+        case .symbols:
+            return "category.6"
+        case .flags:
+            return "category.7"
+        }
     }
 }
