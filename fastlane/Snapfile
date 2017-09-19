@@ -1,0 +1,10 @@
+devices([
+ "iPhone 6", 
+ "iPhone 6 Plus", 
+ "iPad Air 2"
+])
+
+languages([
+  "en-US",
+  "fr-FR"
+])

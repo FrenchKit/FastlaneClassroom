@@ -11,6 +11,7 @@
 		9B174CF31F46C39100B69B66 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B174CF21F46C39100B69B66 /* Utils.swift */; };
 		9B3AA8AB1F545F60008B117C /* EmojiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AA8AA1F545F60008B117C /* EmojiUITests.swift */; };
 		9B4800F51F500DE600F524A5 /* versions.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B4800F41F500DE600F524A5 /* versions.json */; };
+		9B48CD701F717324006C59DA /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B48CD6F1F717324006C59DA /* SnapshotHelper.swift */; };
 		9BB8525B1F46B8830061F5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8525A1F46B8830061F5A2 /* AppDelegate.swift */; };
 		9BB8525F1F46B8830061F5A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8525E1F46B8830061F5A2 /* DetailViewController.swift */; };
 		9BB852621F46B8830061F5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB852601F46B8830061F5A2 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		9B3AA8AA1F545F60008B117C /* EmojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiUITests.swift; sourceTree = "<group>"; };
 		9B3AA8AC1F545F60008B117C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4800F41F500DE600F524A5 /* versions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = versions.json; sourceTree = "<group>"; };
+		9B48CD6F1F717324006C59DA /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		9BB852571F46B8830061F5A2 /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB8525A1F46B8830061F5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB8525E1F46B8830061F5A2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		9B3AA8A91F545F60008B117C /* EmojiUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9B48CD6F1F717324006C59DA /* SnapshotHelper.swift */,
 				9B3AA8AA1F545F60008B117C /* EmojiUITests.swift */,
 				9B3AA8AC1F545F60008B117C /* Info.plist */,
 			);
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3AA8AB1F545F60008B117C /* EmojiUITests.swift in Sources */,
+				9B48CD701F717324006C59DA /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

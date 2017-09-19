@@ -23,6 +23,7 @@ class EmojiUITests: XCTestCase {
         }
         
         let app = XCUIApplication()
+        setupSnapshot(app)
         app.launch()
     }
     
@@ -30,7 +31,7 @@ class EmojiUITests: XCTestCase {
         
         let app = XCUIApplication()
         
-        // TODO: Lauch Screenshot
+        snapshot("0-Launch")
         
         // We are looking for the collectionView
         let emojislistCollectionView = app.collectionViews["emojisList"]
@@ -38,22 +39,22 @@ class EmojiUITests: XCTestCase {
         // Then, we tap on the 1F60E cell (1F60E is the code of the "cool" emoji)
         emojislistCollectionView.cells["1F60E"].tap()
         
-        // TODO: Cool screenshot
-        
+        snapshot("1-Cool")
+
         // Press the UINavigationBar back button
         backButton()?.tap()
         
         // Tap the 1F603 cell (1F60E is the code of the "Proud" emoji)
         emojislistCollectionView.cells["1F603"].tap()
         
-        // TODO: Proud screenshot
+        snapshot("2-Proud")
         backButton()?.tap()
         
         
         // Let's find the nerd (1F913)
         if let nerdCell = scroll(collectionView: emojislistCollectionView, toFindCellWithId: "1F913") {
             nerdCell.tap()
-            // TODO: Nerd screenshot
+            snapshot("3-Nerd")
             backButton()?.tap()
         } else {
             XCTFail("Unable to find nerd cell :(")
