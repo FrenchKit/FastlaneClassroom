@@ -1,0 +1,34 @@
+fastlane_version "2.57.1"
+
+default_platform :ios
+
+def count_generated_screenshots
+  output_dir = File.expand_path(File.join("../", ENV["SNAPSHOT_OUTPUT_DIRECTORY"]))
+  Dir[File.join(output_dir, '**', '*.png')].count { |file| File.file?(file) }
+end
+
+platform :ios do
+  before_all do
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    ENV["FL_SLACK_USERNAME"] = "Caprica Six"
+    ENV["FL_SLACK_ICON_URL"] = "http://ios117.com/images/bot.png"
+    ENV["FL_SLACK_DEFAULT_PAYLOADS"] = ""
+    ENV["SNAPSHOT_OUTPUT_DIRECTORY"] = "screenshots"
+  end
+
+  desc "Run snapshots"
+  lane :screenshots do
+    slack(message: "📸\nStarting screenshot generation")
+
+    snapshot
+
+    slack(message: "🙌\n*#{count_generated_screenshots()}* screenshots generated. Just by pressing 1 button !")
+  end
+
+  error do |lane, exception|
+    slack(
+      message: "🤷\nUh oh, we had an error with lane #{lane}:\n#{exception.message}\n\n¯\\_(ツ)_/¯",
+      success: false
+    )
+  end
+end
