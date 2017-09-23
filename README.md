@@ -1,6 +1,8 @@
 # fastlane: from Zero to Hero
 
-This repository contains all the resources needed to attend the “fastlane from Zero to Hero” classroom at [FrenchKit 2017](http://frenchkit.fr). 
+This repository contains all the resources needed to attend the “fastlane from Zero to Hero” classroom at [FrenchKit 2017](http://frenchkit.fr) on 09/23. 
+
+The slides displayed during this classroom are [available on SpeakerDeck](https://speakerdeck.com/juli1quere/fastlane-from-0-to-hero).
 
 ## Requirement
 
